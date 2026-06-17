@@ -186,7 +186,8 @@
       "Users": "Users",
       "EnterPassword": "Enter password",
       "ConfirmPassword": "Confirm password",
-      "Yes": "Yes"
+      "Yes": "Yes",
+      "Configured": "configured"
     },
     "Common": {
       "Tools": "Tools",
@@ -200,6 +201,9 @@
       "DisableFeature": "Disable feature",
       "Enabled": "Enabled",
       "Disabled": "Disabled",
+      "AllEnabled": "All enabled",
+      "PartiallyEnabled": "Partially enabled",
+      "AllDisabled": "All disabled",
       "SearchPlaceholder": "Search modules...",
       "EmptyTitle": "No matching modules",
       "EmptyDescription": "Adjust the keyword, status, or category filter.",
@@ -230,6 +234,48 @@
         "ProjectDescription": "Project workspaces and collaborative delivery modules.",
         "Other": "Other modules",
         "OtherDescription": "Additional feature modules not assigned to a primary group."
+      },
+      "Features": {
+        "GROUP_COPILOT": {
+          "Name": "Copilot features",
+          "Description": "Manage model provider and monitoring modules."
+        },
+        "FEATURE_COPILOT": {
+          "Name": "Model Provider",
+          "Description": "Configure and use model provider features."
+        },
+        "FEATURE_COPILOT_MONITORING": {
+          "Name": "Monitoring",
+          "Description": "Show model provider user usage and monitoring."
+        },
+        "GROUP_XPERT": {
+          "Name": "Xpert features",
+          "Description": "Manage digital expert and related entry points."
+        },
+        "FEATURE_XPERT": {
+          "Name": "Digital Expert",
+          "Description": "Enable Xpert."
+        },
+        "FEATURE_XPERT_CLAWXPERT": {
+          "Name": "ClawXpert",
+          "Description": "Show the ClawXpert entry in the chat sidebar."
+        },
+        "FEATURE_XPERT_CHATBI": {
+          "Name": "ChatBI",
+          "Description": "Show the ChatBI entry in the main navigation."
+        },
+        "FEATURE_XPERT_CODEXPERT": {
+          "Name": "CodeXpert",
+          "Description": "Show the CodeXpert entry in the main navigation."
+        },
+        "FEATURE_XPERT_DEEP_RESEARCH": {
+          "Name": "DeepResearch",
+          "Description": "Show the DeepResearch entry in the main navigation."
+        },
+        "FEATURE_XPERT_DATA_ONTOLOGY": {
+          "Name": "Data & Ontology",
+          "Description": "Show the Data & Ontology entry in the main navigation."
+        }
       }
     },
     "MCP": {
@@ -384,9 +430,11 @@
       "Cancel": "Cancel",
       "Close": "Close",
       "Delete": "Delete",
+      "Edit": "Edit",
       "INVITE": "Invite",
       "ManageInvites": "Manage Invites",
       "NEW": "New",
+      "Pause": "Pause",
       "Remove": "Remove",
       "Rename": "Rename",
       "Resend": "Resend",
@@ -398,7 +446,8 @@
       "Saving": "Saving...",
       "CLEAR_CACHE": "Clear Cache",
       "DOWNLOAD_AGENT": "Download Agent",
-      "CONFIRM_DELETE": "Confirm delete?"
+      "CONFIRM_DELETE": "Confirm delete?",
+      "Test": "Test"
     },
     "Skill": {
       "AddSkill": "Add Skill",
@@ -798,6 +847,23 @@
       "AttachmentsMaxNumExceeded": "Attachment count exceeds the limit",
       "AttachmentsAlreadyExists": "Attachment already exists.",
       "GotoWorkspace": "Go to Workspace",
+      "Tasks": "tasks",
+      "Successful": "successful",
+      "Failed": "failed",
+      "TaskQueue": "Task queue",
+      "NoTasksAvailable": "No tasks available",
+      "NoScheduledTasks": "No scheduled tasks.",
+      "NoPausedTasks": "No paused tasks.",
+      "NoArchivedTasks": "No archived tasks.",
+      "TaskSuccessCount": "Number of successful task executions",
+      "TaskFailureCount": "Number of task execution failures",
+      "UntitledTask": "Untitled task",
+      "SchedulePlaceholder": "Schedule details coming soon",
+      "RunStats": "Run stats",
+      "NoInstruction": "No instruction",
+      "SelectTaskTitle": "Select a task",
+      "UnknownStatus": "Unknown",
+      "UntitledConversation": "Untitled conversation",
       "ClawXpert": {
         "Title": "ClawXpert",
         "Shell": "ClawXpert Shell",
@@ -810,6 +876,8 @@
         "LoadFailed": "Failed to load ClawXpert.",
         "LoadFailedDesc": "Check your assistant access and try again.",
         "ReferenceUnavailable": "Chat composer is not ready yet. Try again in a moment.",
+        "ChatkitUnavailable": "Chat is not ready yet.",
+        "TaskHistoryThreadMissing": "This task history record has no conversation thread.",
         "ReferenceAttachFailed": "Failed to attach the selected reference.",
         "ServiceRestartFailed": "Failed to restart the sandbox service.",
         "ServiceStopFailed": "Failed to stop the sandbox service.",
@@ -934,9 +1002,11 @@
         "ThreadDetailEyebrow": "Conversation detail",
         "Detail": "ClawXpert Detail",
         "Files": "Files",
+        "FilesLauncherDesc": "Browse project files",
         "WorkspaceFiles": "Workspace files",
         "Computer": "Computer",
         "Browser": "Browser",
+        "BrowserLauncherDesc": "Open website",
         "NewWorkspaceTab": "New workspace tab",
         "FixedViews": "Fixed Views",
         "NoFixedViews": "No fixed views",
@@ -985,6 +1055,7 @@
         "Stdout": "Stdout",
         "Stderr": "Stderr",
         "Terminal": "Terminal",
+        "TerminalLauncherDesc": "Launch interactive shell",
         "FilesTitle": "Workspace file browser",
         "TerminalTitle": "Workspace terminal",
         "FilesDesc": "Browse and edit current session workspace files stored in the server volume.",
@@ -1270,10 +1341,10 @@
         "CHATBI_VIEW": "Use ChatBI",
         "CHATBI_EDIT": "Manage ChatBI Configuration",
         "COPILOT_VIEW": "Use Copilots",
-        "COPILOT_EDIT": "Maintain Copilot Configuration",
+        "COPILOT_EDIT": "Manage Model Providers",
         "KNOWLEDGEBASE_EDIT": "Maintain Knowledge Base",
         "CHAT_VIEW": "Use Chat AI",
-        "INTEGRATION_EDIT": "Maintain Integrations",
+        "INTEGRATION_EDIT": "Manage System Integrations",
         "DATA_FACTORY_VIEW": "Use Data Factory",
         "DATA_FACTORY_EDIT": "Manage Data Factory Configuration",
         "XPERT_EDIT": "Manage Difital Experts"
@@ -1324,7 +1395,33 @@
       "DeleteModel": "Delete Model",
       "AddModel": "Add Model"
     },
+    "XProject": {
+      "NoExperts": "No experts found"
+    },
     "Xpert": {
+      "Xpert": "Xpert",
+      "Task": "Task",
+      "Schedule": "Schedule",
+      "Scheduled": "Scheduled",
+      "Paused": "Paused",
+      "Archived": "Archived",
+      "NewTask": "New Task",
+      "NoRecordsYet": "No records yet",
+      "History": "History",
+      "Instruction": "Instruction",
+      "Archive": "Archive",
+      "Records": "records",
+      "NameOfTask": "Name of task",
+      "SelectExpert": "Select Expert",
+      "EditXpert": "Edit Xpert",
+      "ScheduleSendTarget": "Send target",
+      "NoScheduleSendTarget": "No proactive send target",
+      "EnterPromptHere": "Enter prompt here.",
+      "TasksRemaining": "tasks remaining",
+      "Current": "Current",
+      "TasksActive": "tasks active",
+      "UpdateTask": "Update Task",
+      "CreateTask": "Create Task",
       "Logs": "Logs",
       "AgentRunStatusReplied": "Replied",
       "SelectTimeRange": "Select time range",
@@ -1700,9 +1797,17 @@
         "Name": "Chat AI",
         "Description": "A conversational interface for interacting with intelligent assistants, digital experts, and toolsets."
       },
+      "FEATURE_COPILOT_MONITORING": {
+        "Name": "Monitoring",
+        "Description": "Show model provider user usage and monitoring."
+      },
       "FEATURE_COPILOT_CHATBI": {
         "Name": "Chat BI",
         "Description": "A conversational interface that enables data querying, analysis, and visualization through natural language interaction."
+      },
+      "FEATURE_DATA_SOURCE": {
+        "Name": "Data Source",
+        "Description": "Enable data source configuration."
       },
       "FEATURE_XPERT": {
         "Name": "Digital Expert",

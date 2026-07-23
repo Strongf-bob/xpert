@@ -4,9 +4,7 @@ English | [中文](./README_zh.md)
 [uri_license_image]: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
 
 <p align="center">
-  <a href="https://xpertai.cn/en/">
-    <img src="docs/images/logo.png" alt="Xpert AI" style="width: 240px; height: auto;">
-  </a>
+  <img src="./assets/readme/hero.svg" width="100%" alt="Xpert AI — agent orchestration and governed enterprise data analysis">
 </p>
 
 <p align="center">
@@ -16,9 +14,6 @@ English | [中文](./README_zh.md)
   <a href="https://xpertai.cn/en/#connect">Enterprise inquiry</a>
 </p>
 
-<p align="center">
-  <em>Open-Source AI Platform for Enterprise Data Analysis, Indicator Management and Agents Orchestration</em>
-</p>
 <p align="center">
   <a href="https://github.com/xpert-ai/xpert/" target="_blank">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=meta-d.ocap" alt="Visitors">
@@ -34,11 +29,13 @@ English | [中文](./README_zh.md)
   </a>
 </p>
 
-**Xpert AI** is an open-source enterprise-level AI system that perfectly integrates two major platforms: agent orchestration and data analysis.
+**Xpert AI** is an open-source enterprise platform that brings agent
+orchestration, file-aware workbenches, indicator management, and data analysis
+into one extensible system.
 
-## 💡 What's New
+## What's new
 
-**🚀 3.10 Agentic Apps & File Understanding!**
+**3.10 — Agentic Apps and File Understanding**
 
 XpertAI 3.10 turns plugins into first-class `Agentic Apps`, combining plugin-provided Xpert templates, Workbench views, runtime middleware capabilities, and file-aware agent execution into a more extensible assistant platform.
 
@@ -49,7 +46,7 @@ XpertAI 3.10 turns plugins into first-class `Agentic Apps`, combining plugin-pro
 - Give middleware safer runtime capabilities for files, knowledgebases, assistant tasks, organization context, chat events, and the new Office Automation middleware flow.
 - Monitor Copilot operations with user-level usage details, usage summaries, filters, checkpoint retention cleanup, Prometheus metrics, and conversation goals.
 
-## Agent-Workflow Hybrid Architecture
+## Agent-workflow hybrid architecture
 
 In today’s rapidly evolving AI landscape, enterprises face a key challenge: **How to balance the creativity of LLMs with the stability of workflows**? Pure agent architectures are flexible but hard to control; traditional workflows are reliable but lack adaptability. Xpert AI’s **Agent-Workflow Hybrid Architecture** is designed to resolve this conflict, enabling AI to have “free will” while adhering to “rule-based order.”
 ![agent-workflow-hybrid-architecture](https://github.com/user-attachments/assets/b3b432f9-54ab-4ec1-9fc4-7e46fbfb88ba)
@@ -76,7 +73,7 @@ A cloud-based agile data analysis platform supporting multidimensional modeling,
 
 </br>
 
-The easiest way to start the Xpert server is through [docker compose](docker/docker-compose.yaml). Before running Xpert with the following commands, make sure that [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your machine:
+The easiest way to start the Xpert server is through [Docker Compose](docker/docker-compose.yml). Before running Xpert with the following commands, make sure that [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your machine:
 
 ```bash
 cd xpert
@@ -183,7 +180,7 @@ This software is available under the following licenses:
 **Contributors**
 
 <a href="https://github.com/xpert-ai/xpert/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=xpert-ai/xpert" />
+  <img src="https://contributors-img.web.app/image?repo=xpert-ai/xpert" alt="Xpert AI contributors" />
 </a>
 
 - Please give us :star: on Github, it **helps**!
